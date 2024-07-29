@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('/static/hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  position: relative; /* Ensures text is above the overlay */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative; /* Ensures text is above the overlay */
+}
+
+/* About Section */
+#about {
+  padding: 3em 0;
+}
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+  padding: 3em 0;
+}
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card-custom {
+  margin-bottom: 2em;
+}
+.card-custom img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Skills Section */
+#skills {
+  padding: 3em 0;
+}
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.skills .icons img {
+  width: 100px;
+  margin: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 3em 0;
+}
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact-form .form-control {
+  margin-bottom: 1em;
+}

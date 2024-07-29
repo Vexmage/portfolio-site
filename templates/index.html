@@ -1,0 +1,57 @@
+{{define "content"}}
+  <header class="hero">
+    <div>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Joel Southall, a Web and Software Developer.</p>
+      <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="container container-custom text-center">
+    <h2>About Me</h2>
+    <p>I'm a software developer with experience in front-end and back-end technologies. I specialize in creating dynamic and beautiful web applications.</p>
+  </section>
+
+  <section id="projects" class="container container-custom">
+    <h2 class="text-center">Featured Projects</h2>
+    <div class="row">
+      {{range .Projects}}
+      <div class="col-md-4">
+        <div class="card card-custom">
+          <img src="{{.Image}}" class="card-img-top" alt="{{.Title}}">
+          <div class="card-body">
+            <h5 class="card-title">{{.Title}}</h5>
+            <p class="card-text">{{.Description}}</p>
+            <a href="{{.Link}}" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </section>
+
+  <section id="skills" class="container container-custom text-center">
+    <h2>Skills</h2>
+    <div class="icons">
+      {{range .Skills}}
+      <img src="{{.Icon}}" alt="{{.Name}}">
+      {{end}}
+    </div>
+  </section>
+
+  <section id="contact" class="container container-custom text-center">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+{{end}}
