@@ -1,6 +1,20 @@
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
+  background: url('/static/background.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire background */
+  color: #333; /* Default text color for better readability */
+}
+
+/* Header */
+.navbar {
+  background-color: #660000; /* Change header background color to dark red */
+}
+.navbar .nav-link, .navbar .navbar-brand {
+  color: #fff; /* White text for better contrast */
+}
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+  color: #ddd; /* Slightly lighter on hover */
 }
 
 /* Hero Section */
@@ -8,7 +22,7 @@ body {
   position: relative;
   background: url('/static/hero-image.jpg') no-repeat center center/cover;
   height: 100vh;
-  color: #fff;
+  color: #fff; /* Text color for hero section */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,38 +39,51 @@ body {
   background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.hero h1,
+.hero p {
   position: relative; /* Ensures text is above the overlay */
+  color: #fff; /* White text for readability over the dark overlay */
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  position: relative; /* Ensures text is above the overlay */
+/* Main Content */
+main {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for better readability */
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 2em; /* Add some margin to separate from hero */
 }
 
 /* About Section */
 #about {
   padding: 3em 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for better readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better separation */
+  text-align: left; /* Left-align text */
 }
+
 #about h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #333; /* Default text color */
 }
+
 #about p {
   font-size: 1.2rem;
   line-height: 1.6;
+  color: #333; /* Default text color */
+  margin-bottom: 1.5rem;
 }
 
 /* Projects Section */
 #projects {
   padding: 3em 0;
+  text-align: left; /* Left-align text */
 }
 #projects h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #333; /* Default text color */
 }
 .card-custom {
   margin-bottom: 2em;
@@ -64,28 +91,49 @@ body {
 .card-custom img {
   border-radius: 5px 5px 0 0;
 }
+.card-custom .card-title,
+.card-custom .card-text {
+  color: #000; /* Black text color inside project boxes */
+}
 
 /* Skills Section */
 #skills {
   padding: 3em 0;
+  text-align: left; /* Left-align text */
 }
 #skills h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #333; /* Default text color */
 }
-.skills .icons img {
-  width: 100px;
-  margin: 10px;
+.skills ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+}
+.skills ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Contact Section */
 #contact {
   padding: 3em 0;
+  text-align: left; /* Left-align text */
 }
 #contact h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #333; /* Default text color */
 }
 .contact-form .form-control {
   margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #660000; /* Change footer background color to dark red */
+  color: #fff; /* White text for better contrast */
+}
+footer p {
+  margin: 0; /* Ensure no extra margin in the footer */
 }

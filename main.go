@@ -26,8 +26,8 @@ type PageData struct {
 
 func main() {
 	projects := []Project{
-		{"Project 1", "Description for project 1", "/static/project1.jpg", "#"},
-		{"Project 2", "Description for project 2", "/static/project2.jpg", "#"},
+		{"Let's Move Fitness Studio", "Comprehensive Web Application Development for local business with ASP.net core MVC and mysql", "/static/project1.jpg", "#"},
+		{"Native American Arts and Crafts Market", "Empowering Indigenous Artistry with a Dynamic Website for NAACM", "/static/project2.jpg", "#"},
 		{"Project 3", "Description for project 3", "/static/project3.jpg", "#"},
 	}
 

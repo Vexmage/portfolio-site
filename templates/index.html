@@ -2,14 +2,25 @@
   <header class="hero">
     <div>
       <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm Joel Southall, a Web and Software Developer.</p>
+      <p>Hi, I'm Joel Southall, a Software Developer, Web Designer and Developer, and Graphic Designer.</p>
       <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
     </div>
   </header>
 
-  <section id="about" class="container container-custom text-center">
+  <section id="about" class="container container-custom">
     <h2>About Me</h2>
-    <p>I'm a software developer with experience in front-end and back-end technologies. I specialize in creating dynamic and beautiful web applications.</p>
+    <p>
+      I'm a software developer with experience in front-end and back-end technologies. I specialize in creating dynamic and beautiful web applications.
+    </p>
+    <p>
+      I have experience using complex software solutions, including ASP.NET Core, Node.js, Go templating, and more. Additionally, I am well-versed in various content management systems such as Squarespace, Shopify, and WordPress. As a database specialist, I have extensive experience with SQL, MySQL, and NoSQL databases, including Firestore and MongoDB. My expertise also extends to mobile app development, where I have utilized React Native to create applications for both Android and iOS.
+    </p>
+    <p>
+      Furthermore, owing to personal interests, work, and my training for my Web Design certificate, I am a skilled graphic and print artist with training in design concepts, balance, color theory, software such as GIMP, Adobe Photoshop, Adobe Illustrator, and more. My design expertise enhances my ability to create visually appealing and user-friendly applications and websites.
+    </p>
+    <p>
+      Coming at this field with a background in journalism, freelance writing, and a previous education in philosophy up to the Master level, I am skilled as a copywriter, editor, interviewer, and researcher. This unique combination of technical and communication skills allows me to effectively bridge the gap between complex technical concepts and clear, engaging content.
+    </p>
   </section>
 
   <section id="projects" class="container container-custom">
@@ -30,16 +41,77 @@
     </div>
   </section>
 
-  <section id="skills" class="container container-custom text-center">
+  <section id="skills" class="container container-custom">
     <h2>Skills</h2>
-    <div class="icons">
-      {{range .Skills}}
-      <img src="{{.Icon}}" alt="{{.Name}}">
-      {{end}}
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <h4>Programming Languages</h4>
+        <ul>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>Go</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>Technologies</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>SCSS</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>ASP.NET Core</li>
+          <li>Go Templating</li>
+            <li>GitHub</li>
+          <li>Bitbucket</li>
+          <li>Squarespace</li>
+          <li>Shopify</li>
+          <li>WordPress</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>NoSQL (Firestore, MongoDB)</li>
+          <li>React Native (Android & iOS)</li>
+          <li>Create.js</li>
+          <li>Tween.js</li>
+          <li>RESTful APIs</li>
+          <li>Webpack</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>Graphic Design</h4>
+        <ul>
+          <li>Graphic and Print Art</li>
+          <li>Design Concepts</li>
+          <li>Balance</li>
+          <li>Color Theory</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>Content Management</h4>
+        <ul>
+          <li>Copywriting</li>
+          <li>Editing</li>
+          <li>Interviewing</li>
+          <li>Research</li>
+        </ul>
+        <h4>Other Skills</h4>
+        <ul>
+          <li>Journalism</li>
+          <li>Freelance Writing</li>
+          <li>Philosophy (Master's Level)</li>
+          <li>Agile Methodologies</li>
+          <li>Jira</li>
+          <li>Slack</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="container container-custom text-center">
+  <section id="contact" class="container container-custom">
     <h2>Contact Me</h2>
     <form class="contact-form">
       <div class="form-group">
